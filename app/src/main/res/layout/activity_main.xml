@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/mainTitle"
+        android:text="Main Menu"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#F45E5E"
+        android:shadowColor="#E23939"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/chooseGame"
+        android:text="Choose A Game!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Game grid -->
+    <GridLayout
+        android:id="@+id/gameGrid"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <!-- Picture Alphabet -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openPictureAlphabet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/picture_alphabet_card"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture Alphabet"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Hangman -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openHangman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/hsix"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hangman"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Math -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/math_game_card"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Math"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Memory Flip -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openMemoryFlip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/memory_flip_card"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memory Flip"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Tic Tac Toe -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openTicTacToe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/tictactoe_card"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tic-Tac-Toe"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Matching -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="openMatching"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:src="@drawable/matching_card"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matching"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reference Links"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:onClick="openReferenceLinks"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+android:padding="60dp"
+android:background="@drawable/game_background"
+tools:context=".MathMenuActivity">
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="343dp"
+    android:layout_height="116dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="50dp"
+    android:gravity="center"
+    android:text="Math Game"
+    android:textColor="@color/white"
+    android:textSize="50sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="132dp"
+    android:layout_marginBottom="50dp"
+    android:gravity="center"
+    android:text="Which operation do you like to play today?"
+    android:textColor="@color/white"
+    android:textSize="30sp"
+    android:textStyle="italic" />
+
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+    android:backgroundTint="#DC4949"
+    android:text="Addition  ➕ "
+    />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Subtraction  ➖ "
+    android:textSize="20sp"
+    android:backgroundTint="#DC4949"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/white"/>
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Multiplication  ✖️ "
+    android:textSize="20sp"
+    android:backgroundTint="#DC4949"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/white"/>
+
+<Button
+    android:id="@+id/button4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#DC4949"
+    android:text="Division  ➗ "
+    android:textColor="@color/white"
+    android:layout_marginBottom="10dp"
+    android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DC4949"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

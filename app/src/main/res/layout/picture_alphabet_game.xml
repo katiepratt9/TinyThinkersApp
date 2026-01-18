@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/game_background"
+    android:padding="24dp">
+
+    <!-- Game title -->
+    <TextView
+        android:id="@+id/tvGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picture\nAlphabet"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Row with High Score and Help button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvHighScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 High Score: 0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/btnHelp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/q"
+            android:background="@android:color/transparent"
+            android:contentDescription="Help"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <!-- Picture -->
+    <ImageView
+        android:id="@+id/imgLetter"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Guess prompt -->
+    <TextView
+        android:id="@+id/tvGuessPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess the Letter"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Answer box -->
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Answer"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:background="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Submit button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#DC4949"
+        android:layout_marginBottom="5dp"
+        android:elevation="6dp" />
+
+    <!-- Clear button -->
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp" />
+
+</LinearLayout>

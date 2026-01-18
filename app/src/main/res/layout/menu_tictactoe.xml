@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/game_background"
+    tools:context=".TicTacToeMenuActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aboreto"
+        android:text="Tic-Tac-Toe"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginBottom="35dp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/twoplayer"
+        android:text="PLAY AGAINST A FRIEND"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/oneplayer"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAINST COMPUTER"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/backTTTM"
+        android:layout_width="320dp"
+        android:text="BACK"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/game_background"
+    tools:context=".TicTacToeMenuActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cowboymovie"
+        android:text="H A N G M A N"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/backTTTM"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#DC4949"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>
